@@ -1,11 +1,216 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CDS 리소스 — Mason Korea</title><meta name="description" content="CDS 학생을 위한 자격증, 인턴·정부 지원 일경험·연구, 데이터 소스 탐색"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='6' fill='%231b5041'/%3E%3Cpath d='M28 12H13v16h15M13 20h11' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="brand" href="./"><span class="mark">C</span> CDS <span class="brand-light">리소스</span></a><span class="school">MASON KOREA · COMPUTATIONAL & DATA SCIENCE</span></header>
-<main><div class="heading"><div><h1>CDS 학생 리소스</h1></div><div class="edition">추천 리소스 · 탐색 사이트</div></div>
-<div class="desk-layout"><section class="recommendations" aria-labelledby="recommended-title"><div class="section-heading"><h2 id="recommended-title">추천 리소스</h2><p>직접 살펴보고 고른 자격증·학습 과정과 데이터 소스</p></div>
-<nav class="tabs" aria-label="리소스 분야"><button data-cat="all" aria-pressed="true">전체 <span></span></button><button data-cat="cert" aria-pressed="false">자격증·인증 <span>4</span></button><button data-cat="data" aria-pressed="false">데이터 소스 <span>7</span></button></nav>
-<div class="toolbar"><label class="search"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="추천 리소스 검색" aria-label="추천 리소스 검색"></label><select id="region" aria-label="지역 선택"><option value="all">모든 지역</option><option>온라인</option><option>송도·인천</option><option>서울·경기</option></select><label class="switch-label"><input id="openOnly" type="checkbox" role="switch"><span class="switch"></span>모집 중만 보기</label></div>
-<div class="list-caption"><p><strong id="count"></strong>개의 리소스</p><button id="archive" aria-pressed="false">지난 공고 보기</button></div>
-<div class="column-head"><span>분야 / 리소스</span><span>신청·제출 마감</span><span>학습 · 이용</span><span>비용 · 장소</span><span></span></div><section id="list" aria-label="리소스 목록"></section><div id="empty" hidden><h2>조건에 맞는 항목이 없어요.</h2><p>검색어나 필터를 바꿔보세요.</p><button id="reset">필터 초기화</button></div>
-</section><aside class="discovery" aria-labelledby="discovery-title"><div class="section-heading"><h2 id="discovery-title">더 찾아보기</h2><p>새로운 공고와 대회를 찾는 사이트</p></div><p class="directory-note">공고별 지원 자격·일정·장소는 해당 사이트에서 확인하세요.</p><section class="directory-group"><h3>인턴·일경험</h3><a class="directory-link" href="https://yw.work24.go.kr/main.do" target="_blank" rel="noopener noreferrer"><span class="directory-name">청년일경험포털<span aria-hidden="true">↗</span></span><span class="directory-desc">정부 지원 인턴형·프로젝트형 일경험을 직무와 지역별로 찾아보세요.</span></a><a class="directory-link" href="https://linkareer.com/" target="_blank" rel="noopener noreferrer"><span class="directory-name">링커리어<span aria-hidden="true">↗</span></span><span class="directory-desc">기업 인턴, 채용, 대외활동과 공모전 공고를 함께 살펴보세요.</span></a></section><section class="directory-group"><h3>학부 연구</h3><a class="directory-link" href="https://phdkim.net/gradrecruit" target="_blank" rel="noopener noreferrer"><span class="directory-name">김박사넷<span aria-hidden="true">↗</span></span><span class="directory-desc">연구실 모집 공고에서 학부 인턴 여부를 확인하세요. 대학원생 모집도 함께 올라옵니다.</span></a></section><section class="directory-group"><h3>해커톤·데이터 대회</h3><a class="directory-link" href="https://dacon.io/competitions" target="_blank" rel="noopener noreferrer"><span class="directory-name">DACON<span aria-hidden="true">↗</span></span><span class="directory-desc">국내 데이터 분석·AI 경진대회를 찾아보세요.</span></a><a class="directory-link" href="https://www.kaggle.com/competitions" target="_blank" rel="noopener noreferrer"><span class="directory-name">Kaggle<span aria-hidden="true">↗</span></span><span class="directory-desc">해외 머신러닝·데이터 분석 대회를 살펴보세요.</span></a><a class="directory-link" href="https://devpost.com/hackathons" target="_blank" rel="noopener noreferrer"><span class="directory-name">Devpost<span aria-hidden="true">↗</span></span><span class="directory-desc">온라인·오프라인 해커톤을 주제와 개최 방식별로 찾아보세요.</span></a></section><section class="directory-group"><h3>행사·세미나·워크숍</h3><a class="directory-link" href="https://onoffmix.com/" target="_blank" rel="noopener noreferrer"><span class="directory-name">온오프믹스<span aria-hidden="true">↗</span></span><span class="directory-desc">IT·AI 관련 세미나, 교육·워크숍과 공모전 등 다양한 행사를 찾아보세요.</span></a></section></aside></div><footer><span>CDS RESOURCE DESK</span><p>추천 리소스는 상세 보기에서, 새 공고는 더 찾아보기에서 확인하세요.</p><span>공식 안내 기준 · 2026.09.14</span></footer></main>
-<dialog id="detail" aria-labelledby="detail-title"><div class="panel-top"><span>리소스 상세</span><button id="close" aria-label="상세 패널 닫기">×</button></div><div id="detail-content" class="panel-content"></div><div class="panel-bottom"><p>신청·이용 전 공식 페이지의 최신 조건을 확인하세요.</p><a id="official" class="official-button" target="_blank" rel="noopener noreferrer">공식 안내 보기 ↗</a></div></dialog><script src="resources.js"></script><script src="app.js"></script></body></html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CDS 리소스 — Mason Korea</title>
+    <meta
+      name="description"
+      content="CDS 학생을 위한 자격증, 인턴·정부 지원 일경험·연구, 데이터 소스 탐색"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='6' fill='%231b5041'/%3E%3Cpath d='M28 12H13v16h15M13 20h11' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./"
+        ><span class="mark">C</span> CDS
+        <span class="brand-light">리소스</span></a
+      ><span class="school">MASON KOREA · COMPUTATIONAL & DATA SCIENCE</span>
+    </header>
+    <main>
+      <div class="heading">
+        <div><h1>CDS 학생 리소스</h1></div>
+        <div class="edition">추천 리소스 · 탐색 사이트</div>
+      </div>
+      <div class="desk-layout">
+        <section class="recommendations" aria-labelledby="recommended-title">
+          <div class="section-heading">
+            <h2 id="recommended-title">추천 리소스</h2>
+            <p>직접 살펴보고 고른 자격증·학습 과정과 데이터 소스</p>
+          </div>
+          <nav class="tabs" aria-label="리소스 분야">
+            <button data-cat="all" aria-pressed="true">
+              전체 <span></span></button
+            ><button data-cat="cert" aria-pressed="false">
+              자격증·인증 <span>4</span></button
+            ><button data-cat="data" aria-pressed="false">
+              데이터 소스 <span>7</span>
+            </button>
+          </nav>
+          <div class="toolbar">
+            <label class="search"
+              ><svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="10.5" cy="10.5" r="6.5" />
+                <path d="m16 16 5 5" /></svg
+              ><input
+                id="search"
+                type="search"
+                placeholder="추천 리소스 검색"
+                aria-label="추천 리소스 검색" /></label
+            ><select id="region" aria-label="지역 선택">
+              <option value="all">모든 지역</option>
+              <option>온라인</option>
+              <option>송도·인천</option>
+              <option>서울·경기</option></select
+            ><label class="switch-label"
+              ><input id="openOnly" type="checkbox" role="switch" /><span
+                class="switch"
+              ></span
+              >모집 중만 보기</label
+            >
+          </div>
+          <div class="list-caption">
+            <p><strong id="count"></strong>개의 리소스</p>
+            <button id="archive" aria-pressed="false">지난 공고 보기</button>
+          </div>
+          <div class="column-head">
+            <span>분야 / 리소스</span><span>신청·제출 마감</span
+            ><span>학습 · 이용</span><span>비용 · 장소</span><span></span>
+          </div>
+          <section id="list" aria-label="리소스 목록"></section>
+          <div id="empty" hidden>
+            <h2>조건에 맞는 항목이 없어요.</h2>
+            <p>검색어나 필터를 바꿔보세요.</p>
+            <button id="reset">필터 초기화</button>
+          </div>
+        </section>
+        <aside class="discovery" aria-labelledby="discovery-title">
+          <div class="section-heading">
+            <h2 id="discovery-title">더 찾아보기</h2>
+            <p>새로운 공고와 대회를 찾는 사이트</p>
+          </div>
+          <p class="directory-note">
+            공고별 지원 자격·일정·장소는 해당 사이트에서 확인하세요.
+          </p>
+          <section class="directory-group">
+            <h3>인턴·일경험</h3>
+            <a
+              class="directory-link"
+              href="https://yw.work24.go.kr/main.do"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >청년일경험포털<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >정부 지원 인턴형·프로젝트형 일경험을 직무와 지역별로
+                찾아보세요.</span
+              ></a
+            ><a
+              class="directory-link"
+              href="https://linkareer.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >링커리어<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >기업 인턴, 채용, 대외활동과 공모전 공고를 함께
+                살펴보세요.</span
+              ></a
+            >
+          </section>
+          <section class="directory-group">
+            <h3>학부 연구</h3>
+            <a
+              class="directory-link"
+              href="https://phdkim.net/gradrecruit"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >김박사넷<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >연구실 모집 공고에서 학부 인턴 여부를 확인하세요. 대학원생
+                모집도 함께 올라옵니다.</span
+              ></a
+            >
+          </section>
+          <section class="directory-group">
+            <h3>해커톤·데이터 대회</h3>
+            <a
+              class="directory-link"
+              href="https://dacon.io/competitions"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >DACON<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >국내 데이터 분석·AI 경진대회를 찾아보세요.</span
+              ></a
+            ><a
+              class="directory-link"
+              href="https://www.kaggle.com/competitions"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >Kaggle<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >해외 머신러닝·데이터 분석 대회를 살펴보세요.</span
+              ></a
+            ><a
+              class="directory-link"
+              href="https://devpost.com/hackathons"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >Devpost<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >온라인·오프라인 해커톤을 주제와 개최 방식별로 찾아보세요.</span
+              ></a
+            >
+          </section>
+          <section class="directory-group">
+            <h3>행사·세미나·워크숍</h3>
+            <a
+              class="directory-link"
+              href="https://onoffmix.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="directory-name"
+                >온오프믹스<span aria-hidden="true">↗</span></span
+              ><span class="directory-desc"
+                >IT·AI 관련 세미나, 교육·워크숍과 공모전 등 다양한 행사를
+                찾아보세요.</span
+              ></a
+            >
+          </section>
+        </aside>
+      </div>
+      <footer>
+        <span>CDS RESOURCE DESK</span>
+        <p>
+          추천 리소스는 상세 보기에서, 새 공고는 더 찾아보기에서 확인하세요.
+        </p>
+        <span>공식 안내 기준 · 2026.09.14</span>
+      </footer>
+    </main>
+    <dialog id="detail" aria-labelledby="detail-title">
+      <div class="panel-top">
+        <span>리소스 상세</span
+        ><button id="close" aria-label="상세 패널 닫기">×</button>
+      </div>
+      <div id="detail-content" class="panel-content"></div>
+      <div class="panel-bottom">
+        <p>신청·이용 전 공식 페이지의 최신 조건을 확인하세요.</p>
+        <a
+          id="official"
+          class="official-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          >공식 안내 보기 ↗</a
+        >
+      </div>
+    </dialog>
+    <script src="resources.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
